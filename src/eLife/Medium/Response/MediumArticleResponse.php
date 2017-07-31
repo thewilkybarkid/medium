@@ -4,6 +4,7 @@ namespace eLife\Medium\Response;
 
 use DateTime;
 use DateTimeImmutable;
+use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\Type;
 
 final class MediumArticleResponse
@@ -25,6 +26,7 @@ final class MediumArticleResponse
 
     /**
      * @Type("string")
+     * @SerializedName("impactStatement")
      */
     public $impactStatement;
 
